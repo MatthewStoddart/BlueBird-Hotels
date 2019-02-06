@@ -67,7 +67,7 @@ h6 {
   color: var(--dark-gray);
   justify-content: space-between;
   z-index: 1;
-  padding: 1rem;
+  padding: 1rem 10rem;
 }
 
 #navbar ul {
@@ -88,4 +88,30 @@ h6 {
 
 #navbar .logo {
   color: var(--primary-blue);
+}
+
+/* Showcase */
+
+#showcase {
+  background: #333 url("/img/Showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: var(--primary-white);
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
 }
