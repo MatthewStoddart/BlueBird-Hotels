@@ -37,7 +37,8 @@ li {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1,
@@ -67,7 +68,7 @@ h6 {
   color: var(--dark-gray);
   justify-content: space-between;
   z-index: 1;
-  padding: 1rem 10rem;
+  padding: 1rem;
 }
 
 #navbar ul {
@@ -93,7 +94,7 @@ h6 {
 /* Showcase */
 
 #showcase {
-  background: #333 url("/img/Showcase.jpg") no-repeat center center/cover;
+  background: #333 url("/img/") no-repeat center center/cover;
   height: 100vh;
   color: var(--primary-white);
 }
@@ -107,7 +108,7 @@ h6 {
   height: 100%;
   padding: 0 2rem;
 
-  /* Overlay */
+  /* Image Overlay */
   position: absolute;
   top: 65px;
   left: 0px;
