@@ -41,12 +41,47 @@
       </div>
       <div class="showcase-content">
         <div class="container">
-          <h1>Soar Through Paradise</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo
-            saepe veniam eum esse rem dolore quibusdam, quidem cumque harum non
-            quae deserunt id qui officiis, in assumenda vel ea.
-          </p>
+          <form id="form">
+            <div class="time">
+              <label for="Location">
+                <i class="fas fa-globe-americas"></i> Location:</label
+              >
+              <select name="location" id="location">
+                <option value="Select" disabled selected hidden
+                  >Choose A Location</option
+                >
+                <option value="California">California</option>
+                <option value="Florida">Florida</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="New-York">New York</option>
+              </select>
+            </div>
+            <div class="time">
+              <label for="start-date"
+                ><i class="fas fa-calendar-plus"></i> Check In:</label
+              >
+              <input
+                type="date"
+                min="2019-01-01"
+                max="2019-12-31"
+                value="2019-01-01"
+              />
+            </div>
+            <div class="time">
+              <label for="end-date"
+                ><i class="fas fa-calendar-plus"></i> Check Out:</label
+              >
+              <input
+                type="date"
+                min="2019-01-01"
+                max="2019-12-31"
+                value="2019-12-31"
+              />
+            </div>
+            <button class="time" id="form-btn">
+              <i class="fas fa-search magnifying-glass"></i> Search
+            </button>
+          </form>
         </div>
       </div>
     </header>
