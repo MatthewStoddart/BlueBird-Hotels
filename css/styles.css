@@ -21,7 +21,6 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.4rem;
-  overflow-x: hidden;
 }
 
 a {
@@ -95,7 +94,7 @@ h6 {
   top: 0;
   left: 0;
   background: var(--primary-white);
-  margin-top: -3.9rem;
+  margin-top: -4.1rem;
 }
 
 #showcase .video {
@@ -194,4 +193,70 @@ form #form-btn:hover {
 
 ::-webkit-inner-spin-button {
   display: none;
+}
+
+/* Activities */
+
+#activities {
+  display: flex;
+  flex-direction: row;
+  background: #f0f1f1;
+  color: #333;
+}
+
+#activities-content {
+  background: var(--primary-white);
+  border-radius: 10px;
+  max-width: var(--max-width);
+  margin: 1rem 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(70, 112, 242, 0.3);
+}
+
+#activities-content h2,
+#activities-content p {
+  text-align: center;
+}
+
+#hotel-activities {
+  display: flex;
+  justify-content: center;
+}
+
+#hotel-activities h4 {
+  text-align: center;
+  color: var(--primary-blue);
+}
+
+#hotel-activities .img {
+  padding: 1rem 1.5rem;
+}
+
+#hotel-activities img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+#bed-content {
+  background: url("../img/Bed.jpeg") no-repeat center center/cover;
+  height: 50vh;
+  width: 50%;
+}
+
+#activity-button {
+  background: var(--primary-blue);
+  color: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#activities-content button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
