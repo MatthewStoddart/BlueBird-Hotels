@@ -403,3 +403,113 @@ form #form-btn:hover {
   padding: 1rem;
   color: #fff;
 }
+
+/* Media Queries */
+
+@media (min-width: 599px) {
+  /* Showcase */
+
+  #heading {
+    margin: 30rem 0rem;
+  }
+
+  #heading h2 {
+    font-size: 3rem;
+  }
+
+  /* Activities */
+
+  #activities {
+    margin-top: 1rem;
+  }
+
+  #activities-content {
+    margin: 0rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  #activities p {
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
+  }
+  #bed-content {
+    display: none;
+  }
+  /* testimonials */
+
+  #testimonials .card {
+    width: 30%;
+  }
+
+  #card-group {
+    margin: 2rem 0rem;
+  }
+
+  #contact-form {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  #heading {
+    margin: 30rem 0rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #heading {
+    margin: 30rem 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Showcase */
+
+  #heading {
+    margin: 24rem 0rem;
+  }
+
+  #heading h2 {
+    font-size: 4rem;
+  }
+
+  /* Activities */
+
+  #activities {
+    margin-top: 2rem;
+  }
+
+  #activities-content {
+    margin: 0rem 1rem;
+    padding: 1rem 2rem;
+  }
+
+  #activities p {
+    font-size: 1rem;
+  }
+  #bed-content {
+    display: initial;
+  }
+  /* testimonials */
+
+  #testimonials .card {
+    width: 20%;
+  }
+
+  #card-group {
+    margin: 2rem 4rem;
+  }
+
+  #contact-form {
+    width: 35%;
+    font-size: 1.3rem;
+  }
+}
+
+@media (orientation: landscape) {
+  #heading {
+    margin: 10rem 0rem;
+  }
+}
