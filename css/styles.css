@@ -21,7 +21,18 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.4rem;
-  background: #f0f1f1;
+  /* background: #f0f1f1; */
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
@@ -62,7 +73,7 @@ h6 {
   background: var(--primary-white);
   color: var(--dark-gray);
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2;
   padding: 1rem;
 }
 
@@ -94,22 +105,42 @@ h6 {
 /* Showcase */
 
 #showcase {
+  height: 100vh;
+  background: url("/img/showcase.jpeg") no-repeat center center/cover;
+}
+
+#overlay {
+  position: absolute;
   height: 100%;
-  display: flex;
-  align-items: center;
-  top: 0;
-  left: 0;
-  background: #f0f1f1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#showcase .container {
+  padding-bottom: 3.5rem;
 }
 
 #showcase .showcase-content {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  max-height: 100%;
-  padding: 0 2rem;
+  justify-content: center;
+}
+
+#heading {
+  margin: 24rem 0rem;
+}
+
+#heading h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#heading .blue-heading {
+  color: var(--primary-blue);
 }
 
 /* Form */
@@ -183,7 +214,6 @@ form #form-btn:hover {
 #activities {
   display: flex;
   flex-direction: row;
-  background: #f0f1f1;
   color: #333;
   margin-top: 2rem;
   height: 100%;
@@ -193,9 +223,10 @@ form #form-btn:hover {
   background: var(--primary-white);
   border-radius: 10px;
   max-width: var(--max-width);
-  margin: 1rem 1rem;
+  margin: 0rem 1rem;
   padding: 1rem 2rem;
   border: 1px solid rgba(70, 112, 242, 0.3);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 #activities-content h2,
@@ -327,7 +358,7 @@ form #form-btn:hover {
   flex-direction: column;
   align-items: center;
   background: var(--primary-white);
-  width: 30%;
+  width: 35%;
   border: 1px solid rgba(70, 112, 242, 0.4);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -364,10 +395,11 @@ form #form-btn:hover {
 /* Footer */
 #main-footer {
   margin-top: 2rem;
-  background: var(--mild-blue);
+  background: #333;
 }
 
 #main-footer p {
   text-align: center;
   padding: 1rem;
+  color: #fff;
 }
